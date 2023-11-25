@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fa fa-code"></i>
+        { Mobile-Web } School
+      </a>
+
+      <nav class="navbar">
+        <div id="close-navbar" class="fa fa-times"></div>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./courses.html">Courses</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="menuIcons">
+        <div id="account-btn" class="fa fa-user-o"></div>
+        <div id="menu-btn" class="fa fa-bars"></div>
+      </div>
+    </header>
+
+    <!-- Login/SignUp form section -->
+    <div class="auth-form">
+      <div id="close-auth-form" class="fa fa-times"></div>
+
+      <div class="buttons">
+        <span class="btn active login-btn">Login</span>
+        <span class="btn register-btn">Register</span>
+      </div>
+
+      <form class="login-form active">
+        <h3>Login</h3>
+        <input type="email" placeholder="Enter yout Email" class="input-box" />
+        <input
+          type="password"
+          placeholder="Enter yout Password"
+          class="input-box"
+        />
+        <div class="auth-footer">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+          <a href="#">Forget password</a>
+        </div>
+        <input type="submit" value="Login" class="btn" />
+      </form>
+
+      <form class="register-form">
+        <h3>Register</h3>
+        <input type="email" placeholder="Enter yout Email" class="input-box" />
+        <input
+          type="password"
+          placeholder="Enter yout Password"
+          class="input-box"
+        />
+        <input
+          type="password"
+          placeholder="Confirm your password"
+          class="input-box"
+        />
+        <input type="submit" value="Register" class="btn" />
+      </form>
+    </div>
+
+    <!-- Home section -->
+    <section class="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <section class="swiper-slide slide">
+            <div class="content">
+              <h3>The best courses are here!</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis dolorum blanditiis, itaque similique impedit rem
+                pariatur adipisci minima delectus ducimus.
+              </p>
+              <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="image">
+              <img src="./images//home/coding.svg" alt="" />
+            </div>
+          </section>
+          <section class="swiper-slide slide">
+            <div class="content">
+              <h3>The best courses are here!</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis dolorum blanditiis, itaque similique impedit rem
+                pariatur adipisci minima delectus ducimus.
+              </p>
+              <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="image">
+              <img src="./images//home/firmware.svg" alt="" />
+            </div>
+          </section>
+          <section class="swiper-slide slide">
+            <div class="content">
+              <h3>The best courses are here!</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis dolorum blanditiis, itaque similique impedit rem
+                pariatur adipisci minima delectus ducimus.
+              </p>
+              <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="image">
+              <img src="./images//home/programming.svg" alt="" />
+            </div>
+          </section>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- Course Section -->
+    <section class="offerings">
+      <h1 class="section-title">We offer courses in:</h1>
+      <div class="offering-boxes">
+        <div class="box">
+          <div>
+            <i class="fa fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>12 Modules</p>
+        </div>
+        <div class="box">
+          <div>
+            <i class="fa fa-mobile"></i>
+          </div>
+          <h3>Mobile App Development</h3>
+          <p>12 Modules</p>
+        </div>
+        <div class="box">
+          <div>
+            <i class="fa fa-bar-chart-o"></i>
+          </div>
+          <h3>Data Science</h3>
+          <p>12 Modules</p>
+        </div>
+        <div class="box">
+          <div>
+            <i class="fa fa-newspaper-o"></i>
+          </div>
+          <h3>Designs</h3>
+          <p>12 Modules</p>
+        </div>
+        <div class="box">
+          <div>
+            <i class="fa fa-database"></i>
+          </div>
+          <h3>DataBase</h3>
+          <p>12 Modules</p>
+        </div>
+        <div class="box">
+          <div>
+            <i class="fa fa-bars"></i>
+          </div>
+          <h3>Machine Learning</h3>
+          <p>12 Modules</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="h-courses">
+      <h1 class="section-title">Our Popular Course</h1>
+      <div class="swiper courses-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="/images/webDevNODEjs.png" alt="Node-course" />
+              <h3>Nodejs MasterClass Course</h3>
+            </div>
+            <div class="content">
+              <h3>Nodejs MasterClass Course</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, autem?
+              </p>
+              <a href="#" class="btn">Know more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="/images/mern2.jpg" alt="Node-course" />
+              <h3>MERN Master Course</h3>
+            </div>
+            <div class="content">
+              <h3>MERN Master Course</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, autem?
+              </p>
+              <a href="#" class="btn">Know more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="/images/responsive3.jpg" alt="Node-course" />
+              <h3>Build for all Devices Course</h3>
+            </div>
+            <div class="content">
+              <h3>Build for all Devices Course</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, autem?
+              </p>
+              <a href="#" class="btn">Know more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="/images/webDevHTML.png" alt="Node-course" />
+              <h3>Web Dev Absolute Beginner Course</h3>
+            </div>
+            <div class="content">
+              <h3>Web Dev Absolute Beginner Course</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, autem?
+              </p>
+              <a href="#" class="btn">Know more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="/images/webDev7.jpg" alt="Node-course" />
+              <h3>Reactjs Master Course</h3>
+            </div>
+            <div class="content">
+              <h3>Reactjs Master Course</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, autem?
+              </p>
+              <a href="#" class="btn">Know more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="footer-box">
+          <h3><i class="fa fa-code"></i> Mobile-Web School</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            dicta.
+          </p>
+          <div class="share">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <h3>Links</h3>
+          <a href="./index.html" class="menu-link">Home</a>
+          <a href="./about.html" class="menu-link">About</a>
+          <a href="./courses.html" class="menu-link">Courses</a>
+          <a href="./contact.html" class="menu-link">Contact</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Useful Links</h3>
+          <a href="#" class="menu-link">Help center</a>
+          <a href="#" class="menu-link">Ask question</a>
+          <a href="#" class="menu-link">Send Feedback</a>
+          <a href="#" class="menu-link">Privacy policy</a>
+          <a href="#" class="menu-link">Terms of use</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Newsletter</h3>
+          <p>Subscribe for latest updates</p>
+          <form>
+            <input type="email" placeholder="Enter your email" class="email" />
+            <input type="submit" value="Subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+
+      <div class="credit">
+        Developed by <span>AppTickz Digital</span> | All Rights Reserved
+      </div>
+    </section>
+
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Custom js file -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

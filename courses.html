@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fa fa-code"></i> Mobile-Web School
+      </a>
+
+      <nav class="navbar">
+        <div id="close-navbar" class="fa fa-times"></div>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./courses.html">Courses</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="menuIcons">
+        <div id="account-btn" class="fa fa-user-o"></div>
+        <div id="menu-btn" class="fa fa-bars"></div>
+      </div>
+    </header>
+
+    <!-- Login/SignUp form section -->
+    <div class="auth-form">
+      <div id="close-auth-form" class="fa fa-times"></div>
+
+      <div class="buttons">
+        <span class="btn active login-btn">Login</span>
+        <span class="btn register-btn">Register</span>
+      </div>
+
+      <form class="login-form active">
+        <h3>Login</h3>
+        <input type="email" placeholder="Enter yout Email" class="input-box" />
+        <input
+          type="password"
+          placeholder="Enter yout Password"
+          class="input-box"
+        />
+        <div class="auth-footer">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+          <a href="#">Forget password</a>
+        </div>
+        <input type="submit" value="Login" class="btn" />
+      </form>
+
+      <form class="register-form">
+        <h3>Register</h3>
+        <input type="email" placeholder="Enter yout Email" class="input-box" />
+        <input
+          type="password"
+          placeholder="Enter yout Password"
+          class="input-box"
+        />
+        <input
+          type="password"
+          placeholder="Confirm your password"
+          class="input-box"
+        />
+        <input type="submit" value="Register" class="btn" />
+      </form>
+    </div>
+
+    <!-- Breadcrumb section -->
+    <section class="breadcrumb">
+      <h3>Our Courses</h3>
+      <p><a href="./index.html">home</a> / courses</p>
+    </section>
+
+    <!-- Course Section -->
+    <section class="courses">
+      <h1 class="section-title">Our Courses</h1>
+
+      <div class="courses-box-container">
+        <div class="box">
+          <div class="image">
+            <img src="./images/courses/web_developer.svg" alt="mern" />
+            <h3>Web Development</h3>
+          </div>
+          <div class="content">
+            <h3>Choose what's best for you!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              nulla.
+            </p>
+            <a href="#" class="small-btn">Read more</a>
+            <div class="icons">
+              <span><i class="fa fa-book"></i> 12 modules</span>
+              <span><i class="fa fa-dollar"></i> 10</span>
+              <span><i class="fa fa-clock-o"></i> 6 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./images/courses/app_installation.svg" alt="fsd" />
+            <h3>Mobile Apps Development</h3>
+          </div>
+          <div class="content">
+            <h3>Choose what's best for you!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              nulla.
+            </p>
+            <a href="#" class="small-btn">Read more</a>
+            <div class="icons">
+              <span><i class="fa fa-book"></i> 12 modules</span>
+              <span><i class="fa fa-dollar"></i> 10</span>
+              <span><i class="fa fa-clock-o"></i> 6 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./images/courses/data.svg" alt="mern" />
+            <h3>Data Science</h3>
+          </div>
+          <div class="content">
+            <h3>Choose what's best for you!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              nulla.
+            </p>
+            <a href="#" class="small-btn">Read more</a>
+            <div class="icons">
+              <span><i class="fa fa-book"></i> 12 modules</span>
+              <span><i class="fa fa-dollar"></i> 10</span>
+              <span><i class="fa fa-clock-o"></i> 6 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./images/courses/mobile_ux.svg" alt="mern" />
+            <h3>UI/UX Designs</h3>
+          </div>
+          <div class="content">
+            <h3>Choose what's best for you!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              nulla.
+            </p>
+            <a href="#" class="small-btn">Read more</a>
+            <div class="icons">
+              <span><i class="fa fa-book"></i> 12 modules</span>
+              <span><i class="fa fa-dollar"></i> 10</span>
+              <span><i class="fa fa-clock-o"></i> 6 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./images/courses/server.svg" alt="mern" />
+            <h3>Database</h3>
+          </div>
+          <div class="content">
+            <h3>Choose what's best for you!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              nulla.
+            </p>
+            <a href="#" class="small-btn">Read more</a>
+            <div class="icons">
+              <span><i class="fa fa-book"></i> 12 modules</span>
+              <span><i class="fa fa-dollar"></i> 10</span>
+              <span><i class="fa fa-clock-o"></i> 6 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./images/courses/robotics.svg" alt="mern" />
+            <h3>Machine Learning</h3>
+          </div>
+          <div class="content">
+            <h3>Choose what's best for you!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              nulla.
+            </p>
+            <a href="#" class="small-btn">Read more</a>
+            <div class="icons">
+              <span><i class="fa fa-book"></i> 12 modules</span>
+              <span><i class="fa fa-dollar"></i> 10</span>
+              <span><i class="fa fa-clock-o"></i> 6 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box hide">
+          <div class="image">
+            <img src="./images/courses/safe.svg" alt="mern" />
+            <h3>Cyber Security</h3>
+          </div>
+          <div class="content">
+            <h3>Choose what's best for you!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              nulla.
+            </p>
+            <a href="#" class="small-btn">Read more</a>
+            <div class="icons">
+              <span><i class="fa fa-book"></i> 12 modules</span>
+              <span><i class="fa fa-dollar"></i> 10</span>
+              <span><i class="fa fa-clock-o"></i> 6 hours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more"><div class="btn">Load more</div></div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="footer-box">
+          <h3><i class="fa fa-code"></i> Mobile-Web School</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            dicta.
+          </p>
+          <div class="share">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <h3>Links</h3>
+          <a href="./index.html" class="menu-link">Home</a>
+          <a href="./about.html" class="menu-link">About</a>
+          <a href="./courses.html" class="menu-link">Courses</a>
+          <a href="./contact.html" class="menu-link">Contact</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Useful Links</h3>
+          <a href="#" class="menu-link">Help center</a>
+          <a href="#" class="menu-link">Ask question</a>
+          <a href="#" class="menu-link">Send Feedback</a>
+          <a href="#" class="menu-link">Privacy policy</a>
+          <a href="#" class="menu-link">Terms of use</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Newsletter</h3>
+          <p>Subscribe for latest updates</p>
+          <form>
+            <input type="email" placeholder="Enter your email" class="email" />
+            <input type="submit" value="Subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+
+      <div class="credit">
+        Developed by <span>AppTickz Digital</span> | All Rights Reserved
+      </div>
+    </section>
+
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom js file -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

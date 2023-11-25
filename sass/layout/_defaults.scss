@@ -1,0 +1,132 @@
+* {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 200ms linear;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  @include respond(tab-port) {
+    font-size: 55%;
+  }
+
+  @include respond(small-phone) {
+    font-size: 50%;
+  }
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $primary;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondary;
+  }
+}
+
+img {
+  user-select: none;
+}
+
+section {
+  padding: 5rem 7rem;
+
+  @include respond(tab-port) {
+    padding: 3rem 5rem;
+  }
+
+  @include respond(big-phone) {
+    padding: 4rem;
+  }
+
+  @include respond(small-phone) {
+    padding: 2rem;
+  }
+}
+
+.breadcrumb {
+  text-align: center;
+  background: url(../../images/coding5.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  h3 {
+    @include titleText(4rem);
+    color: $white;
+    text-shadow: 0 0.5rem 1rem $black;
+  }
+
+  p {
+    @include graphText(2rem);
+    color: $secondary;
+
+    a {
+      color: $white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  @include titleText(3.5rem);
+
+  @include respond(small-phone) {
+    font-size: 3rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: $border;
+  border-radius: 3rem;
+  background-color: $secondary;
+  color: $primary;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white;
+    color: $secondary;
+  }
+}
+
+.small-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: $border;
+  border-radius: 2rem;
+  background-color: $secondary;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white;
+    color: $secondary;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $secondary;
+}

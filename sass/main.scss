@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap");
+
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "components/authForm";
+@import "components/footer";
+@import "components/header";
+
+@import "layout/defaults";
+
+@import "pages/about";
+@import "pages/contact";
+@import "pages/courses";
+@import "pages/home";

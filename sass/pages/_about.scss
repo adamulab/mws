@@ -1,0 +1,166 @@
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  .image {
+    flex: 1 1 40rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    flex: 1 1 40rem;
+
+    .about-title {
+      @include titleText(3rem);
+
+      @include respond(small-phone) {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      @include graphText(1.5rem);
+      padding: 1rem 0;
+    }
+
+    .icons-container {
+      margin-top: 1rem;
+      @include grid(16rem);
+
+      .icons {
+        flex: 1 1 12rem;
+        text-align: center;
+        border: $border;
+        background-color: $light-secondary;
+        padding: 3rem 2rem;
+
+        i {
+          color: $secondary;
+          font-size: 5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        h3 {
+          @include titleText(3rem);
+        }
+
+        span {
+          @include graphText(1.5rem);
+        }
+      }
+    }
+  }
+}
+
+.teachers {
+  .slide {
+    text-align: center;
+    width: 30rem;
+
+    &:hover {
+      .image {
+        img {
+          background-color: $light-white;
+        }
+
+        .share {
+          bottom: 0;
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        background-color: $secondary;
+        width: 100%;
+      }
+
+      .share {
+        position: absolute;
+        bottom: -10rem;
+        left: 0;
+        right: 0;
+        background-color: $primary;
+        padding: 2rem;
+
+        a {
+          font-size: 3rem;
+          margin: 0 1rem;
+          color: $white;
+
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      padding-top: 2rem;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        @include titleText(2rem);
+      }
+
+      span {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+}
+
+.reviews {
+  .slide {
+    text-align: center;
+    width: 30rem;
+
+    p {
+      @include graphText(1.5rem);
+      position: relative;
+      background-color: $light-secondary;
+      border: $border;
+      margin-bottom: 3rem;
+      padding: 2rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1.2rem;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        background-color: $light-secondary;
+        border-bottom: $border;
+        border-right: $border;
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+
+    img {
+      height: 7rem;
+      width: 7rem;
+      border-radius: 50%;
+    }
+
+    h3 {
+      @include titleText(1.7rem);
+      padding: 0.5rem 0;
+    }
+
+    .stars {
+      font-size: 1.5rem;
+      color: $secondary;
+    }
+  }
+}

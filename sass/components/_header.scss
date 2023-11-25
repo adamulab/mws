@@ -1,0 +1,109 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $primary;
+  box-shadow: $box-shadow;
+  padding: 2rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+
+  @include respond(laptop-tabland) {
+    padding: 2rem 3rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  .logo {
+    @include titleText(2.5rem);
+    color: $white;
+
+    i {
+      color: $secondary;
+    }
+  }
+
+  .navbar {
+    position: relative;
+
+    @include respond(big-phone) {
+      position: fixed;
+      top: 0;
+      right: -105%;
+      width: 30rem;
+      background-color: $primary;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      z-index: 1200;
+    }
+
+    #close-navbar {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      font-size: 4rem;
+      cursor: pointer;
+      color: $secondary;
+      display: none;
+
+      @include respond(big-phone) {
+        display: block;
+      }
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+
+    &.active {
+      @include respond(big-phone) {
+        right: 0;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    a {
+      @include titleText(2rem);
+      color: $white;
+      margin-right: 3rem;
+      text-transform: uppercase;
+
+      @include respond(big-phone) {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
+      }
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  .menuIcons div {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: $white;
+    margin-left: 1.5rem;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  #menu-btn {
+    display: none;
+
+    @include respond(big-phone) {
+      display: inline-block;
+    }
+  }
+}

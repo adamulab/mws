@@ -1,0 +1,96 @@
+.auth-form {
+  position: fixed;
+  top: 0;
+  right: 105%;
+  width: 35rem;
+  height: 100%;
+  background-color: $primary;
+  color: $white;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  justify-content: center;
+  z-index: 1200;
+  padding: 2rem;
+  text-align: center;
+
+  &.active {
+    right: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  }
+
+  #close-auth-form {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: $secondary;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+
+  form {
+    border: $border;
+    padding: 2rem;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    h3 {
+      @include titleText(2.5rem);
+      color: $secondary;
+      padding-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .input-box {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      border: $border;
+      font-size: 1.6rem;
+      margin: 0.7rem 0;
+    }
+
+    .auth-footer {
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      label {
+        font-size: 1.5rem;
+        color: $gray;
+        cursor: pointer;
+      }
+
+      a {
+        font-size: 1.5rem;
+        color: $gray;
+        margin-left: auto;
+
+        &:hover {
+          text-decoration: underline;
+          color: $secondary;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .buttons .btn {
+    margin: 0 0.5rem;
+
+    &.active {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+}

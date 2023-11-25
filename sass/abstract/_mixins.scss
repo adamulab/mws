@@ -1,0 +1,60 @@
+// Media Queries
+/*
+0 - 600 = Phone
+600 - 900 = Tablet Portrait
+900 - 1200 = Tablet Landscape
+1200 - 1800 = Normal Styles
+1800> = Big Screens
+
+$breakpoint arguements
+- phone
+- tab-port
+- tab-land
+- big-screen
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media (max-width: 28.12em) {
+      @content;
+    } //450px
+  }
+  @if $breakpoint == big-phone {
+    @media (max-width: 48em) {
+      @content;
+    } //768px
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 61.93em) {
+      @content;
+    } //991px
+  }
+  @if $breakpoint == laptop-tabland {
+    @media (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  // @if $breakpoint == bigScreen {
+  //   @media (min-width: 112.5em) {
+  //     @content;
+  //   } //1800px
+  // }
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+
+@mixin titleText($titleSize) {
+  font-size: $titleSize;
+  text-transform: capitalize;
+  color: $black;
+}
+
+@mixin graphText($graphSize) {
+  font-size: $graphSize;
+  line-height: 2;
+  color: $gray;
+}
